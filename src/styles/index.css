@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply box-border;
+  }
+
+  body {
+    @apply antialiased;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+  }
+}
+
+@layer utilities {
+  .neo-card {
+    @apply bg-neo-light shadow-neo rounded-3xl;
+  }
+
+  .neo-button {
+    @apply bg-neo-light shadow-neo rounded-xl px-6 py-3 font-semibold transition-all duration-300 hover:shadow-neo-inset;
+  }
+
+  .neo-input {
+    @apply bg-neo-light shadow-neo-inset rounded-xl px-4 py-3 w-full outline-none focus:shadow-neo transition-all duration-300;
+  }
+
+  .page-container {
+    @apply container mx-auto px-4 py-24 max-w-7xl;
+  }
+
+  .section-title {
+    @apply text-4xl md:text-5xl font-bold text-gray-800 mb-12 text-center;
+  }
+}
+
+.typewriter {
+  overflow: hidden;
+  border-right: .15em solid #6366f1;
+  white-space: nowrap;
+  animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #6366f1 }
+}
