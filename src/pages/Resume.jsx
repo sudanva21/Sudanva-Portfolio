@@ -3,7 +3,7 @@ import { FaDownload, FaGraduationCap, FaBriefcase, FaAward } from 'react-icons/f
 import PageTransition from '../components/PageTransition'
 
 const Resume = () => {
-  const resumeUrl = '/resume.pdf'
+  const resumeUrl = '/Sudanva-Shilannavar.pdf'
 
   const education = [
     {
